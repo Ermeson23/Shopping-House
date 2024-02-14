@@ -1,6 +1,12 @@
+import { useSelector } from "react-redux";
 import "./Header.css";
+import { RootState } from "../../store/rootReducer";
 
 export default function Header() {
+
+    const cartItems = useSelector((state: RootState) => state.cart.items);
+    const favoriteItems = useSelector((state: RootState) => state.favorite.products);
+
     return (
         <header>
             <nav className="navbar navbar-expand-md bg-primary fixed-top">
@@ -20,9 +26,11 @@ export default function Header() {
                                     <a className="nav-link custom-links" aria-current="page" href="/">Home</a>
                                 </li>
                                 <li className="nav-item">
+                                    <div className="detail-cart">{cartItems.length}</div>
                                     <a className="nav-link  custom-links" href="/pages/cart">Carrinho</a>
                                 </li>
                                 <li className="nav-item">
+                                <div className="detail-favorite">{favoriteItems.length}</div>
                                     <a className="nav-link  custom-links" href="/pages/favorite">Favoritos</a>
                                 </li>
                             </ul>
