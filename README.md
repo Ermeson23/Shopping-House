@@ -40,6 +40,6 @@ Para o layout foram utilizados recursos básicos do framework Bootstrap para a e
 - Font Icos
 - API utilizada: [Fakestoreapi](https://fakestoreapi.com/products) .
 
-  ### ✨ Bibliotecas online
+### ✨ Bibliotecas online
 
-  Para a construção de interfaces amigáveis e aplicação de uma melhor experiência de usuário foi utilizado [Bootsrap](https://getbootstrap.com/). Já para os ícones, foi aplicado recursos do [Font Awsome](https://fontawesome.com/icons).
+Para a construção de interfaces amigáveis e aplicação de uma melhor experiência de usuário foi utilizado [Bootsrap](https://getbootstrap.com/). Já para os ícones, foi aplicado recursos do [Font Awsome](https://fontawesome.com/icons).
