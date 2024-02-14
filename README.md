@@ -27,7 +27,7 @@ Para o layout foram utilizados recursos básicos do framework Bootstrap para a e
 - 1 - Execute "npm install" para instalar as dependencias do package
 - 2 - Comando para a instalação do Redux: npm install @reduxjs/toolkit react-redux
 - 3 - Abra o arquivo index.html em seu navegador
-- 4 - Link do Projeto no vercel: https://task-02-redux.vercel.app/
+- 4 - Link do Projeto no vercel: https://task-02-redux-wheat.vercel.app/
 
 ## 💻 Tecnologias utilizadas
 
