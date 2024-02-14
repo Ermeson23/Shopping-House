@@ -17,7 +17,7 @@ export default function Header() {
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li className="nav-item">
-                                    <a className="nav-link custom-links" aria-current="page" href="/pages/home">Home</a>
+                                    <a className="nav-link custom-links" aria-current="page" href="/">Home</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link  custom-links" href="/pages/cart">Carrinho</a>

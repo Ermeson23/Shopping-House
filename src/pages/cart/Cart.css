@@ -1,0 +1,21 @@
+.card img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 50%;
+    border-radius: 8px 8px 0 0;
+    align-self: center;
+    padding: 1rem;
+}
+
+.custom-button {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.clear-cart {
+    margin-bottom: 1rem;
+}

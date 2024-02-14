@@ -1,0 +1,11 @@
+.card img {
+    width: 250px;
+    height: 50%;
+    border-radius: 8px 8px 0 0;
+    align-self: center;
+    padding: 1rem;
+}
+
+.clear-favorite {
+    margin-bottom: 1rem;
+}
