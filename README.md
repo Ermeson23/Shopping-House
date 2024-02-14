@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# 🚀 Projeto Shopping House
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 👤 Integrante
+- Ermeson Ribeiro
+  ( [github](https://github.com/Ermeson23) | [linkedin](linkedin.com/in/ermeson-ribeiro-a29121212/) )
+  
+## 📄 Descrição
 
-Currently, two official plugins are available:
+O projeto Shopping House apresenta um site criado em React. Trata-se de um site com três páginas, a saber, uma página home, na qual se encontram os produtos, uma página de carrinho e outra de favoritos. Objetivo dele é colocar em prática os conceitos apresentados sobre gerenciamento de estados na aplicação com o uso da biblioteca Redux. Nele se aplicam conceitos do Redux para possibilitar a persistência de estados. Diferentemente do trabalho anterior, os dados desta aplicação são obtidos por meio de uma API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖇️ Especificações
 
-## Expanding the ESLint configuration
+### 🖥️ Seções
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+O projeto possui as seguintes páginas:
 
-- Configure the top-level `parserOptions` property like this:
+- Página de Produtos (Home)
+- Página de Carrinho
+- Página de Favoritos
+  
+### 🖼️ Layout
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Para o layout foram utilizados recursos básicos do framework Bootstrap para a estilização genérica e CSS comum para a estilização específica
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## ⚙️ Como Executar na sua máquina
+
+- 1 - Execute "npm install" para instalar as dependencias do package
+- 2 - Comando para a instalação do Redux: npm install @reduxjs/toolkit react-redux
+- 3 - Abra o arquivo index.html em seu navegador
+- 4 - Link do Projeto no vercel: https://task-02-redux.vercel.app/
+
+## 💻 Tecnologias utilizadas
+
+- HTML5
+- React (Criado com Vite)
+- TypeScript
+- Redux
+- CSS
+- Bootstrap
+- Font Icos
+- API utilizada: [Fakestoreapi](https://fakestoreapi.com/products) .
+
+  ### ✨ Bibliotecas online
+
+  Para a construção de interfaces amigáveis e aplicação de uma melhor experiência de usuário foi utilizado [Bootsrap](https://getbootstrap.com/). Já para os ícones, foi aplicado recursos do [Font Awsome](https://fontawesome.com/icons).
