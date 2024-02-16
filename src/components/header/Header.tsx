@@ -30,8 +30,17 @@ export default function Header() {
                                     <a className="nav-link  custom-links" href="/pages/cart">Carrinho</a>
                                 </li>
                                 <li className="nav-item">
-                                <div className="detail-favorite">{favoriteItems.length}</div>
+                                    <div className="detail-favorite">{favoriteItems.length}</div>
                                     <a className="nav-link  custom-links" href="/pages/favorite">Favoritos</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link  custom-links" href="/pages/register">Cadastro</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link  custom-links" href="/pages/login">Login</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link  custom-links" href="/pages/logged">Área logada</a>
                                 </li>
                             </ul>
                         </div>
