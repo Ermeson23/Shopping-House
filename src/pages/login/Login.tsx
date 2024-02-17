@@ -1,11 +1,15 @@
 import React, { FormEvent, ChangeEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { useLoginUserMutation } from '../../store/login/loginSlice';
 import { UserLoginData } from '../../types/types';
 
 import "./Login.css";
 
 export default function Login() {
-    const [loginUser, { isLoading, data }] = useLoginUserMutation();
+    const [loginUser, { isLoading, isError }] = useLoginUserMutation();
+
+    const navigate = useNavigate();
 
     const [formValues, setFormValues] = React.useState<UserLoginData>({
         email: '',
@@ -19,14 +23,18 @@ export default function Login() {
         });
     };
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        loginUser(formValues);
+        try {
+            await loginUser(formValues).unwrap();
+            alert("Usuário logado com sucesso.");
+            navigate("../pages/logged");
+        } catch (error) {
+            console.error("Erro ao fazer login. Verifique suas credenciais.", error);
+        }
     };
 
     if (isLoading) return <div>Carregando...</div>;
-
-    if (data) return <div>Usuário logado com sucesso! ID: {data.id}</div>;
 
     return (
         <section>
@@ -53,6 +61,7 @@ export default function Login() {
                 />
 
                 <button type="submit" className="btn btn-primary">Entrar</button>
+                {isError && <p>Erro ao fazer login. Verifique suas credenciais.</p>}
             </form>
         </section>
     )

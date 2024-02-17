@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { removeItemFavorite, clearFavorite } from "../../store/favorite/favoriteSlice";
 import { RootState } from "../../store/rootReducer";
-import { Product } from "../../store/home/homeSlice";
+import { Product } from "../../types/types";
 
 import "./Favorite.css";
 

@@ -18,6 +18,7 @@ import Header from './components/header/Header';
 import rootReducer from './store/rootReducer';
 import { loginUserApi } from './store/login/loginSlice';
 import { registerUserApi } from './store/register/registerSlice';
+import { loggedUserApi } from './store/logged/loggedSlice';
 
 import "./App.css";
 import Logged from './pages/logged/Logged';
@@ -31,7 +32,7 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 const store = configureStore({
   reducer: persistedReducer,
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(loginUserApi.middleware, registerUserApi.middleware),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(loginUserApi.middleware, registerUserApi.middleware, loggedUserApi.middleware),
 });
 
 const persistor = persistStore(store);

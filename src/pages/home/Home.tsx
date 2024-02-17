@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store/rootReducer';
-import { Product, fecthProducts } from '../../store/home/homeSlice';
+import { fecthProducts } from '../../store/home/homeSlice';
+import { Product } from '../../types/types';
 
 import "./Home.css";
 import { addItem } from '../../store/cart/cartSlice';

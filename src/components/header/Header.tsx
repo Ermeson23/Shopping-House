@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { useSelector } from "react-redux";
 import "./Header.css";
 import { RootState } from "../../store/rootReducer";
@@ -23,24 +25,24 @@ export default function Header() {
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li className="nav-item">
-                                    <a className="nav-link custom-links" aria-current="page" href="/">Home</a>
+                                    <Link className="nav-link custom-links" aria-current="page" to="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
                                     <div className="detail-cart">{cartItems.length}</div>
-                                    <a className="nav-link  custom-links" href="/pages/cart">Carrinho</a>
+                                    <Link className="nav-link  custom-links" to="/pages/cart">Carrinho</Link>
                                 </li>
                                 <li className="nav-item">
                                     <div className="detail-favorite">{favoriteItems.length}</div>
-                                    <a className="nav-link  custom-links" href="/pages/favorite">Favoritos</a>
+                                    <Link className="nav-link  custom-links" to="/pages/favorite">Favoritos</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link  custom-links" href="/pages/register">Cadastro</a>
+                                    <Link className="nav-link  custom-links" to="/pages/register">Cadastro</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link  custom-links" href="/pages/login">Login</a>
+                                    <Link className="nav-link  custom-links" to="/pages/login">Login</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link  custom-links" href="/pages/logged">Área logada</a>
+                                    <Link className="nav-link  custom-links" to="/pages/logged">Área logada</Link>
                                 </li>
                             </ul>
                         </div>
