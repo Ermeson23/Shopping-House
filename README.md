@@ -17,6 +17,9 @@ O projeto possui as seguintes páginas:
 - Página de Produtos (Home)
 - Página de Carrinho
 - Página de Favoritos
+- Página de Login
+- Página de Cadastro
+- Página de Área Logada (OBS: Esta página ficou estática, decidi inseri-la mesmo assim para seguir o fluxo esperado)
   
 ### 🖼️ Layout
 
@@ -39,6 +42,7 @@ Para o layout foram utilizados recursos básicos do framework Bootstrap para a e
 - Bootstrap
 - Font Icos
 - API utilizada: [Fakestoreapi](https://fakestoreapi.com/products) .
+- API utilizada para simulação de Login e Cadastros de Usuário: [Reqres](https://reqres.in/)
 
 ### ✨ Bibliotecas online
 
