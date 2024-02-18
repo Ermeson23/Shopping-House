@@ -1,4 +1,6 @@
 .card img {
+    display: flex;
+    flex-wrap: wrap;
     width: 250px;
     height: 50%;
     border-radius: 8px 8px 0 0;
