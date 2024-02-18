@@ -27,12 +27,12 @@ export default function Register() {
     e.preventDefault();
     try {
       await registerUser(formValues).unwrap();
-      alert("Usuário cadastrado com sucesso.");
       navigate("../pages/login");
     } catch (error) {
       console.error("Erro ao tentar cadastrar usuário.");
     }
   };
+  
 
   if (isLoading) return <div>Carregando...</div>;
 

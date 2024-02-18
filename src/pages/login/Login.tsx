@@ -27,7 +27,7 @@ export default function Login() {
         e.preventDefault();
         try {
             await loginUser(formValues).unwrap();
-            alert("Usuário logado com sucesso.");
+            console.log("Usuário logado com sucesso.");
             navigate("../pages/logged");
         } catch (error) {
             console.error("Erro ao fazer login. Verifique suas credenciais.", error);
