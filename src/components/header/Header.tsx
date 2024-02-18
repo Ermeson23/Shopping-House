@@ -41,9 +41,6 @@ export default function Header() {
                                 <li className="nav-item">
                                     <Link className="nav-link  custom-links" to="/pages/login">Login</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link  custom-links" to="/pages/logged">Área logada</Link>
-                                </li>
                             </ul>
                         </div>
                     </div>

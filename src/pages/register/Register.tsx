@@ -1,5 +1,5 @@
 import React, { FormEvent, ChangeEvent } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { useRegisterUserMutation } from '../../store/register/registerSlice';
 import { UserRegisterData } from '../../types/types';
@@ -62,6 +62,7 @@ export default function Register() {
 
         <button type="submit" className="btn btn-primary">Cadastrar</button>
         {isError && <p>Erro ao tentar cadastrar usuário.</p>}
+        <p>Já tem uma conta?<Link aria-label="Link para a tela de login" className="text-detail" to="../pages/login">Fazer login</Link></p>
       </form>
     </section>
   )

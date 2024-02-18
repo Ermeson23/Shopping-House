@@ -1,5 +1,5 @@
 import React, { FormEvent, ChangeEvent } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { useLoginUserMutation } from '../../store/login/loginSlice';
 import { UserLoginData } from '../../types/types';
@@ -62,6 +62,7 @@ export default function Login() {
 
                 <button type="submit" className="btn btn-primary">Entrar</button>
                 {isError && <p>Erro ao fazer login. Verifique suas credenciais.</p>}
+                <p>Não tem uma conta?<Link aria-label="Link para a tela de cadastro" className="text-detail" to="../pages/register">Criar conta</Link></p>
             </form>
         </section>
     )

@@ -14,3 +14,16 @@ h2 {
 .btn {
     margin-top: 10px;
 }
+
+label {
+    padding: 0.5rem;
+}
+
+.text-detail {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.text-detail:hover {
+    color: #000;
+}

@@ -49,7 +49,7 @@ export default function Home() {
               <p>R${product.price}</p>
               <p><strong>Categoria:</strong> {product.category}</p>
               <label htmlFor="favorite" className="p-2">Adicionar como favorito</label>
-              <input type="checkbox" checked={product.isFavorite} onChange={() => handleFavoriteChange(product.id)} />
+              <i onClick={() => handleFavoriteChange(product.id)} className="fa-regular fa-heart"></i>
               <button onClick={() => handleAddToCart(product)} className="btn btn-success">Adicionar ao carrinho</button>
             </div>
           </div>

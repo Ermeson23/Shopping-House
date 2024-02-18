@@ -13,7 +13,7 @@
 .detail-cart {
     position: absolute;
     top: 3px;
-    right: 340px;
+    right: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
 .detail-favorite {
     position: absolute;
     top: 3px;
-    right: 260px;
+    right: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
